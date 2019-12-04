@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: azure-devops-demo
+  server:
+    host: ${MICRONAUT_SERVICE_HOST:localhost}
+    port: ${MICRONAUT_SERVICE_PORT:8087}
