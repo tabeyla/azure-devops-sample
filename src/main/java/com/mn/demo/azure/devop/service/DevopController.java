@@ -9,6 +9,6 @@ public class DevopController {
 
     @Get("/hello")
     public String hello() {
-        return "hello azure devops";
+        return "hello azure devops to a new docker registry again";
     }
 }
