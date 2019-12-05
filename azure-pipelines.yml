@@ -17,5 +17,5 @@ steps:
     displayName: Build azure-devops-sample docker image
     inputs:
       repository: $(imageName)
-      command: buildAndPush
+      command: build
       Dockerfile: Dockerfile
