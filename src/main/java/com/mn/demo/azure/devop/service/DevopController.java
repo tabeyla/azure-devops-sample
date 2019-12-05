@@ -13,6 +13,6 @@ public class DevopController {
      */
     @Get("/hello")
     public String hello() {
-        return "hello azure devops to a new docker registry again";
+        return "hello azure devops to a new docker registry again for karan";
     }
 }
