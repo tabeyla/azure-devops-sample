@@ -17,5 +17,6 @@ steps:
     displayName: Build azure-devops-sample docker image
     inputs:
       repository: $(imageName)
-      command: build
+      command: buildAndPush
       Dockerfile: Dockerfile
+      containerRegistry: demodockerregistry945
