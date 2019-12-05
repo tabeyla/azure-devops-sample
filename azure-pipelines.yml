@@ -22,3 +22,7 @@ steps:
       command: buildAndPush
       dockerfile: Dockerfile
       containerRegistry: demoregistry945
+      tags: |
+        $(Build.BuildId)
+        latest
+      
