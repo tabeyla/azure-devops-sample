@@ -9,6 +9,6 @@ public class DevopController {
 
     @Get("/hello")
     public String hello() {
-        return "hello";
+        return "hello azure devops";
     }
 }
