@@ -5,7 +5,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'azure-devops-sample-docker'
+  imageName: 'azuredevopssample'
 
 steps:
   - task: Gradle@2
