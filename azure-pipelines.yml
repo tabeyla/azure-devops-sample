@@ -10,8 +10,9 @@ variables:
 steps:
   - task: Gradle@2
     displayName: Gradle build
-    gradleWrapperFile: 'gradlew'
-    tasks: build
+    inputs:
+      gradleWrapperFile: 'gradlew'
+      tasks: build
   - task: Docker@2
     displayName: Build azure-devops-sample docker image
     inputs:
