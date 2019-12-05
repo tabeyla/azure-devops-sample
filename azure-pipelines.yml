@@ -19,4 +19,6 @@ steps:
       repository: $(imageName)
       command: buildAndPush
       Dockerfile: Dockerfile
-      containerRegistry: demodockerregistry945
+      containerregistrytype: Azure Container Registry
+      azureSubscriptionEndpoint: demodockerregistry945
+      azureContainerRegistry: demodockerregistry945
