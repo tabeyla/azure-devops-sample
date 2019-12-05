@@ -3,6 +3,7 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
+DOCKER_BUILDKIT: 1
 
 variables:
   imageName: 'azuredevopssample'
@@ -18,5 +19,6 @@ steps:
     displayName: Build azure-devops-sample docker image
     inputs:
       repository: $(imageName)
-      command: build
+      command: buildAndPush
       Dockerfile: Dockerfile
+      containerRegistry: demoregistry945
