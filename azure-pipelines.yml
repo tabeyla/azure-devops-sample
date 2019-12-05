@@ -1,0 +1,20 @@
+trigger:
+  - master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  imageName: 'pipelines-javascript-docker'
+
+steps:
+  - task: Gradle@2
+    displayName: Gradle build
+    gradleWrapperFile: 'gradlew'
+    tasks: build
+  - task: Docker@2
+    displayName: Build azure-devops-sample docker image
+    inputs:
+      repository: $(imageName)
+      command: build
+      Dockerfile: app/Dockerfile
