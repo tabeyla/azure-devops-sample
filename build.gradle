@@ -40,7 +40,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "com.mn.demo.azure.devop.Application"
+mainClassName = "com.mn.demo.azure.devop.DevopsDemo"
 // use JUnit 5 platform
 test {
     useJUnitPlatform()
