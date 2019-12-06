@@ -4,7 +4,7 @@ package com.mn.demo.azure.devop.service;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 
-@Controller
+@Controller("/")
 public class DevopController {
 
     /**
