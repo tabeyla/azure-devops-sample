@@ -51,6 +51,7 @@ tasks.withType(JavaCompile){
 }
 
 shadowJar {
+    archiveFileName="app.jar"
     mergeServiceFiles()
 }
 
