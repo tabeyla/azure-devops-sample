@@ -23,7 +23,7 @@ steps:
     displayName: Build and push into Container registry
     inputs:
       repository: demo/devopsdemocontainer
-      command: build
+      command: buildAndPush
       dockerfile: Dockerfile
       containerRegistry: azuresubscription1cr
       tags: |
