@@ -6,7 +6,6 @@ pool:
   DOCKER_BUILDKIT: 1
 
 variables:
-  imageName: 'azuredevopssample'
   DOCKER_BUILDKIT: 1
 
 steps:
