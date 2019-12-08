@@ -24,10 +24,9 @@ steps:
     displayName: Build and push into Container registry
     inputs:
       repository: demo/azuredevopssample
-      command: buildAndPush
+      command: build
       dockerfile: Dockerfile
-      containerRegistry: demoregistry945
+#      containerRegistry: demoregistry945
       tags: |
         $(Build.BuildId)
         latest
-      
