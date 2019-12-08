@@ -26,6 +26,4 @@ steps:
       command: buildAndPush
       dockerfile: Dockerfile
       containerRegistry: azuresubscription1cr
-      tags: |
-        $(Build.BuildId)
-        latest
+      tags: latest
