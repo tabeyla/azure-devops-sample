@@ -14,16 +14,16 @@ steps:
     inputs:
       gradleWrapperFile: 'gradlew'
       tasks: assemble
-  - task: CopyFiles@2
-    inputs:
-      contents: '**/*.jar'
-      targetFolder: '$(build.artifactStagingDirectory)'
-  - task: PublishBuildArtifacts@1
-#  - task: Docker@2
-#    displayName: Build and push into Container registry
+#  - task: CopyFiles@2
 #    inputs:
-#      repository: demo/devopsdemocontainer
-#      command: buildAndPush
-#      dockerfile: Dockerfile
-#      containerRegistry: azuresubscription1cr
-#      tags: latest
+#      contents: '**/*.jar'
+#      targetFolder: '$(build.artifactStagingDirectory)'
+#  - task: PublishBuildArtifacts@1
+  - task: Docker@2
+    displayName: Build and push into Container registry
+    inputs:
+      repository: demo/devopsdemocontainer
+      command: buildAndPush
+      dockerfile: Dockerfile
+      containerRegistry: azuresubscription1cr
+      tags: latest
