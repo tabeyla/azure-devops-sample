@@ -3,4 +3,4 @@ micronaut:
     name: azure-devops-sample
   server:
     host: ${MICRONAUT_SERVICE_HOST:localhost}
-    port: ${MICRONAUT_SERVICE_PORT:80}
+    port: ${MICRONAUT_SERVICE_PORT:8000}
