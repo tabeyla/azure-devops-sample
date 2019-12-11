@@ -13,6 +13,6 @@ public class DevopController {
      */
     @Get("/hello")
     public String hello() {
-        return "Hello devops with Azure Container Registry";
+        return "Hello devops with Azure Container Registry for MS";
     }
 }
